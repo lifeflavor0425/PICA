@@ -103,20 +103,20 @@
 
 # 담당
 - Frontend
-    - 각종 web 페이지 구현
-    - fetch 함수를 이용하여 URL 컨텐츠 여부 확인
-    - socketio 및 Ajax 를 이용하여 서버와 통신
-    - 서버와 통신하기 위한 이벤트 함수 구현
+    - 각종 web 페이지 세팅
+    - 서버와 각종 데이터 통신하기 위한 이벤트 함수 구현
 - Backend
-    - 로그인 세션 관리 구현
-    - AWS S3, SQS 연동 구현
-    - Docker 컨테이너 세팅 구현
+    - 코드 리팩토링, 함수형 프로그래밍, REST API 구축
+    - 초기 DB  뼈대 구축, DB query 세팅
+    - DB Timeout 문제 지속적 DB connection으로 해결
+    - WAS 서버 분할 → WAS (라우팅, 간단 로직) || MIDDLE WARE(API 호출, 복잡 로직)
+    - Thread 객체를 활용해 각종 함수 백그라운드 동작 구현
+    - 관리자 페이지 사용자별 DB 쿼리 수행
 - Infra
     - EC2 환경에서 서비스 구현
-    - S3 이벤트 트리거로 Lambda 코드 구현
+    - EKS 환경에서 서비스 구현
+    - SQS 이벤트 트리거로 Lambda 코드 구현
 - AI
-    - YOLO 모델(담배 모델) 파인튜닝(재학습)
-    - Roboflow를 통해 이미지 전처리
-    - 서비스 성능을 위해 영상의 프레임을 3프레임당 1번씩 모델 예측 시켜 3개의 모델이 동시에 동작하는 것처럼 구현
-    - SQS 메시지 풀링을 통해 YOLO 컨테이너와 dlib 컨테이너 동작 구현
+    - LangChain(gpt) 패키지를 활용해 사용자 대화 요약 prompt 구현
+    - FAISS(gpt) 패키지를 활용해 백터 DB 구현 및 세팅
 
